@@ -1,0 +1,13 @@
+# Jogo-da-Velha
+ Seguindo o curso de 'Python Essentials 1' oferecido pela Cisco, ao final do curso, foi proposto o desenvolvimento de um pequeno programa que simulasse o conhecido 'Jogo da Velha' ou 'Tic-Tac-Toe' como é conhecido nos Estados Unidos.
+
+ Como funciona:
+ O objetivo é marcar uma sequência de 3 marcações, seja no sentido horizontal, vertical ou diagonal em um tabuleiro de 9 espaços. Aqui o jogador irá enfrentar um bot durante a partida mas é possível que eu altere o código para que aceite a entrada de dois jogadores simultâneos para o embate. O bot irá fazer a primeira jogada, sempre marcando o espaço central, então o jogador segue escolhendo o próximo espaço. O jogo termina quando marcar a sequência ou quando não houver mais espaços disponíveis, resultando em empate.
+
+ Explicação do código:
+ O tabuleiro é formado por uma lista de 3 linhas com 3 posições cada.
+ O código tem 3 funções para o funcionamento do jogo. A primeira função imprime o tabuleiro no console para a visualização do jogador. A segunda função é utilizada para determinar o espaço escolhido tanto pelo jogador quanto pelo bot, onde ela recebe os numerais de 1 a 9 como parâmetro e entende qual será o espaço do tabuleiro com base neste numeral. A última função é utilizada para determinar o estado do jogo a cada atualização do tabuleiro verificando se uma sequência foi marcada para a vitória do jogador ou do bot ou se todos os espaços foram preenchidos para o empate da partida. Caso nenhuma destas 3 condições sejam verdadeiras, o jogo continua. O primeiro input recebido será a escolha de espaço do jogador, com 2 seções de verificação de erro caso o jogador escolha números além do escopo do programa ou digite um valor inválido. Ao final da partida, o programa imprime o placar atual de vitórias e empates e pergunta se deseja uma nova partida com as variáveis sendo incrementadas para pontuação no placar. Por fim, será impresso uma mensagem final de agradecimento por jogar.
+ O programa importa uma função de randomização para a escolha de numerais do bot e importa uma função de timer para simular o tempo de escolha do mesmo, onde escolhi o tempo de 3 segundos de espera.
+
+ Notas finais:
+ É um programa simples para testar os conhecimentos adquiridos no curso, levei pouco tempo para terminar o código e está bem comentado para caso alguém queira modificá-lo ou me dar sugestões de aprimoramento ao programa. Foi bem divertido criar este código e me deu umas ótimas noções de como utilizar funções, parâmetros e laços de repetições, tanto para verificar a validade da escolha dos jogadores quanto para dar fim ao programa em caso de empate.
